@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+header{
+    position: fixed;
+    background-color: #FF69B4;
+    top: 0;
+    width: 100%;    
+    overflow: visible;
+}
+header img{
+    width: 20rem;
+    padding: 1rem;
+}
+header ul{
+    margin-top: -1rem;
+}
+header li{
+    padding: .3rem;
+    list-style-type: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin-top: 7.5rem;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#submit{
+    width: 30%;
+    height: 2rem;
+    background-color: red;
+    cursor: pointer;
+}
+#email{
+    width: 60%;
+    padding: .5rem;
+    margin: -.5rem .5rem .5rem .1rem;
+}
+#artl-1 div{
+    margin: 3rem .1rem;
+    font-size: 1rem;
+}
+#artl-1 h1{
+    margin-bottom: -.1rem;
+}
+#artl-1 p{
+    margin: -.2rem;
+}
+.sec-3 div{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 16rem;
+    margin: 1rem 8rem;
+    font-weight: 700;
+}
+.sec-3 h3{
+    background-color: #eee4e4;
+    padding: 1rem;
+    border-top: 2px solid black;
+}
+.btn-1,.btn-2,.btn-3{
+    margin: 1rem;
+    padding: .5rem;
+    width: 60%;
+    background-color: yellow;
+    cursor: pointer;
+}
+.btn-1:hover,.btn-2:hover,.btn-3:hover,#submit:hover{
+    background-color: rgba(0, 0, 255, 0.753);
+}
+footer{
+    background-color: #A29587;
+    width: 100%;
+    height: 7rem;
+}
+.footer-info ul,.footer-copyright ul{
+    list-style-type: none;
+}
+.footer-info a,.footer-copyright a{
+    text-decoration: none;
+    color: black;
+}
+.footer-copyright {
+    color: red;
+    margin-bottom: -20rem;
+}
+.footer-info ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.footer-info a:hover,.footer-copyright a:hover{
+    color: blue;
+}
+@media screen and (min-width: 600px){
+    #nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+    #nav-bar a{
+        padding: 1rem;
+    }
+    #nav-bar a:hover{
+        color: blue;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+    #artl-1 div{
+        font-size: 25px;
+    }
+    .sec-3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec-3 div{
+        border: 1px solid black;
+        width: 16rem;
+        margin: 1rem 8rem;
+        font-weight: 700;
+    }
+    .sec-3 h3{
+        background-color: #eee4e4;
+        padding: 1rem;
+        margin-top: -0rem;
+    }
+}
