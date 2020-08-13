@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Product Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
 
     <header id="header">
         <div class="head">
             <img src="./images/original_trombones.png" alt="company logo" id="header-img">
-    
+
             <nav id="nav-bar">
                 <ul>
                     <li><a href="#artl-1" class="nav-link">Features</a></li>
@@ -23,65 +29,85 @@
     </header>
 
     <main>
+
         <div>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
                 <h1>Handcrafted, home-made masterpieces</h1>
                 <input type="email" name="email" id="email" placeholder="Enter your email address">
-                <br>
-                <input type="submit" value="email" id="submit">
+                <input type="submit" value="email" id="submit" class="btn-accept">
             </form>
         </div>
+        
         <article id="artl-1">                
-            <div>
-                <h1>Premium Materials</h1>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will</p>
-                <p>increase the longevity of your purchase.</p>
+            <div class="display-flex">
+                    <i class="fas fa-fire fa-3x one"></i>
+                <div class="artl-div">
+                    <h1>Premium Materials</h1>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will</p>
+                    <p>increase the longevity of your purchase.</p>
+                </div>
             </div>
             <div>
-                <h1>Fast Shipping</h1>
-                <p>We make sure you recieve your trombone as soon as we have finished</p>
-                <p>making it. We also provide free returns if you are not satisfied.</p>
+                <div class="display-flex">
+                    <i class="fas fa-truck fa-3x"></i>
+                    <div class="artl-div">
+                        <h1>Fast Shipping</h1>
+                        <p>We make sure you recieve your trombone as soon as we have finished</p>
+                        <p>making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
             </div>
             <div>
-                <h1>Quality Assurance</h1>
-                <p>For every purchase you make, we will ensure there are no damages or</p>
-                <p>faults and we will check and test the pitch of your instrument.</p>
+                <div class="display-flex">
+                    <i class="fas fa-battery-full fa-3x"></i>
+                    <div class="artl-div">
+                        <h1>Quality Assurance</h1>
+                        <p>For every purchase you make, we will ensure there are no damages or</p>
+                        <p>faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
             </div>
-        </article>     
+        </article>   
+
         <div id="emd-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video">
-            </iframe>
+            <iframe class="iframe" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
         </div>
-        <div id="sec-3" class="sec-3">
+
+        <div id="sec-3">
             <div>
                 <h3>TENOR TROMBONE</h3>
-                <p>$600</p>
-                <br>
-                <p>Lorem ipsum.</p>
-                <p>Lorem ipsum.</p>
-                <p>Lorem ipsum dolor.</p>
-                <p>Lorem ipsum.</p>
-                <button class="btn-1">SELECT</button>
+                <p class="amount">$600</p>
+                <div class="text">
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="btn-1 btn-bluee">SELECT</button>
+                </div>
             </div>
+
             <div>
                 <h3>BASS TROMBONE</h3>
-                <p>$900</p>
-                <br>
-                <p>Lorem ipsum.</p>
-                <p>Lorem ipsum.</p>
-                <p>Lorem ipsum dolor.</p>
-                <p>Lorem ipsum.</p>
-                <button class="btn-2">SELECT</button>
-            </div>       
+                <p class="amount">$900</p>
+                <div class="text">
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="btn-1 btn-bluee">SELECT</button>
+                </div>
+            </div> 
+
             <div>
                 <h3>VALVE TROMBONE</h3>
-                <P>$1200</P>
-                <br>
-                <p>Plays similar to a Trumpet</p>
-                <p>Great for Jazz Bands</p>
-                <p>Lorem ipsum dolor.</p>
-                <p>Lorem ipsum.</p>
-                <button class="btn-3">SELECT</button>
+                <P class="amount">$1200</P>
+                <div class="text">
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="btn-1 btn-bluee">SELECT</button>
+                </div>
             </div>
         </div>
     </main>
@@ -99,6 +125,9 @@
                 <li><a href="#">Copyright 2016, Original Trombones</a></li>
             </ul>
         </div>
+        <h2>designed by <a href=""> emeka</a></h2>
     </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
