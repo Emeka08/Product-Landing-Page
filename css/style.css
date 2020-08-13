@@ -30,7 +30,6 @@ header li{
 }
 .nav-link:hover{
     color: rgb(74, 74, 248);
-    text-decoration: underline;
 }
 form {
     display: flex;
@@ -205,5 +204,9 @@ footer a:hover {
 @media screen and (min-width: 900px){
     #artl-1 {
         width: 60%;
+    }
+    #artl-1 h1{
+        margin-left: -100px;
+        font-size: 23px;
     }
 }
